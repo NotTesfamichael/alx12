@@ -1,26 +1,19 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "TESFAMICHAEL",
+  lastName: "ABOSET",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "DEVOPS ENGINEER",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
-};
-
-const newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: (
-    <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
-    </>
-  ),
+  location: "Addis Ababa, Ethiopia",
+  languages: ["English", "Amharic"], // optional: Leave the array empty if you don't want to display languages
+  contact: {
+    email: "tesfamichael.zelelke@gmail.com",
+    phone: "+251900013737"
+  }
 };
 
 const social = [
@@ -34,7 +27,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "#", // Replace with actual LinkedIn URL
   },
   {
     name: "X",
@@ -44,7 +37,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:tesfamichael.zelelke@gmail.com",
   },
 ];
 
@@ -64,7 +57,7 @@ const home = {
 const about = {
   label: "About",
   title: "About me",
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, a ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -78,208 +71,112 @@ const about = {
   },
   intro: {
     display: true,
-    title: "Introduction",
-    description: (
-      <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
-      </>
-    ),
+    title: "Summary",
+    description: "DevOps Engineer with experience in CI/CD automation, Kubernetes architecture, and infrastructure management across cloud and on-premises environments. Skilled in microservices deployment, Vault security, GitOps, and monitoring and performance across financial and other sectors."
   },
-  work: {
-    display: true, // set to false to hide this section
-    title: "Work Experience",
-    experiences: [
+  skills: {
+    display: true,
+    title: "Key Skills",
+    categories: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
-        achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "DevOps Lifecycle",
+        items: [
+          "Infrastructure as Code (IaC)",
+          "Continuous Integration/Continuous Deployment (CI/CD)",
+          "Monitoring & Logging"
+        ]
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
+        title: "Programming Languages",
+        items: ["Golang", "Python", "Bash", "YAML"]
       },
-    ],
+      {
+        title: "Containerization & Orchestration",
+        items: ["Docker", "Kubernetes"]
+      },
+      {
+        title: "Cloud Services",
+        items: [
+          "Azure (AKS, Blob Storage, VM)",
+          "AWS (EKS, S3, ECS, EC2)",
+          "GCP (GKE, App Engine, Cloud Run)"
+        ]
+      },
+      {
+        title: "CI/CD Tools",
+        items: ["Azure Devops", "Gitlab CI/CD", "ArgoCD", "Jenkins", "Github Actions"]
+      },
+      {
+        title: "IaC & Monitoring",
+        items: ["Terraform", "Prometheus", "Grafana", "Kiali"]
+      }
+    ]
   },
-  studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+  experience: {
+    display: true,
+    title: "Experience",
+    roles: [
+      {
+        company: "Kifiya FInancial Technology PLC",
+        timeframe: "Jan 2025 – Present",
+        role: "DevOps Engineer",
+        achievements: [
+          "Managing and automating CI/CD pipelines with Jenkins, GitHub Actions, and GitLab, reducing deployment time and ensuring seamless rollouts.",
+          "Overseeing 12+ microservices in multiple languages, deployed across 5 banks' on-premise servers, ensuring high availability and performance.",
+          "Implemented automated HashiCorp Vault management using Ansible, securing sensitive credentials and reducing manual secret handling risks.",
+          "Managing self-hosted GitLab CI/CD, container registry, optimizing image storage, and enforcing security best practices.",
+          "Leading the design and implementation of Kubernetes architecture, planning migration from on-premise deployments to a scalable containerized environment."
+        ]
+      },
+      {
+        company: "Ablaze IT Labs and Engineering PLC",
+        timeframe: "Apr 2024 – Jan 2025",
+        role: "DevOps Engineer",
+        achievements: [
+          "CI/CD Optimization: Designed CI/CD pipelines in Azure DevOps, reducing deployment failures by 60% and cutting release cycles from 2 days to 3 hours.",
+          "Kubernetes & Database Management: Managed 4-node AKS clusters, improving app reliability and optimizing PostgreSQL database performance by 35%.",
+          "Infrastructure Provisioning: Deployed and managed Azure VMs and Azure Blob Storage, ensuring scalability and cost efficiency.",
+          "Microservices Deployment: Developed and secured 10+ microservices on Azure AKS, reducing latency by 40% and improving system resilience.",
+          "Team Collaboration & GitOps: Led GitOps adoption, streamlining infrastructure management and boosting deployment efficiency by 50%"
+        ]
+      },
+      {
+        company: "AddisPay Financial Technologies PLC",
+        timeframe: "Dec 2023 – Sep 2024",
+        role: "Jr. DevOps Engineer",
+        achievements: [
+          "Managed Rancher RKE2 cluster setup and management for high availability and fault tolerance.",
+          "Enhanced application connectivity and security through self-hosted services like Docker, kubernetes and Istio.",
+          "Automated deployments and ensured environment consistency with ArgoCD and GitLab CI/CD.",
+          "Simplified service communication and enabled advanced traffic management with Istio deployment.",
+          "Implemented comprehensive monitoring and observability with Prometheus, Grafana, and Kiali."
+        ]
+      },
+      {
+        company: "Hirundo AB Telecommunication VAS",
+        timeframe: "Jun 2022 – Nov 2023",
+        role: "IT Support Engineer",
+        achievements: [
+          "Configured, maintained, and optimized servers to ensure reliable performance and availability.",
+          "Installed, upgraded, and troubleshoot hardware components to minimize system failures.",
+          "Set up and manage enterprise-grade software and network infrastructure to enhance connectivity and system efficiency.",
+          "Diagnosed and resolved software and network issues, ensuring smooth operations.",
+          "Provided technical support, addressing queries from staff and clients to ensure issue resolution."
+        ]
+      }
+    ]
+  },
+  education: {
+    display: true,
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
-    ],
-  },
-  technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
-    skills: [
-      {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-    ],
-  },
+        name: "Bachelor of Science in Electrical and Computer Engineering",
+        year: "2021",
+        description: "Major: Computer Engineering"
+      }
+    ]
+  }
 };
 
-const blog = {
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
-};
-
-const work = {
-  label: "Work",
-  title: "My projects",
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
-};
-
-const gallery = {
-  label: "Gallery",
-  title: "My photo gallery",
-  description: `A photo collection by ${person.name}`,
-  // Images from https://pexels.com
-  images: [
-    {
-      src: "/images/gallery/img-01.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-02.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-03.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-04.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-05.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-06.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-07.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-08.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-09.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-11.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-12.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-13.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-14.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-  ],
-};
-
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, home, about };
