@@ -20,7 +20,7 @@ interface DialogProps extends Omit<React.ComponentProps<typeof Flex>, "title"> {
   title: ReactNode;
   description?: ReactNode;
   children: ReactNode;
-  footer?: ReactNode;
+  // footer?: ReactNode;
   base?: boolean;
   stack?: boolean;
   onHeightChange?: (height: number) => void;
@@ -62,7 +62,7 @@ const Dialog: React.FC<DialogProps> = forwardRef<HTMLDivElement, DialogProps>(
       children,
       stack,
       base,
-      footer,
+      // footer,
       onHeightChange,
       minHeight,
       ...rest
@@ -310,11 +310,11 @@ const Dialog: React.FC<DialogProps> = forwardRef<HTMLDivElement, DialogProps>(
             >
               {children}
             </Flex>
-            {footer && (
+            {/* {footer && (
               <Flex borderTop="neutral-medium" as="footer" horizontal="end" padding="12" gap="8">
                 {footer}
               </Flex>
-            )}
+            )} */}
           </Flex>
         </Flex>
       </Flex>,

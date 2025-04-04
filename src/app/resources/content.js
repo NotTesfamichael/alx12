@@ -7,12 +7,12 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "DEVOPS ENGINEER",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/avatar.png",
   location: "Addis Ababa, Ethiopia",
   languages: ["English", "Amharic"], // optional: Leave the array empty if you don't want to display languages
   contact: {
-    email: "tesfamichael.zelelke@gmail.com",
-    phone: "+251900013737"
+    email: "#",
+    phone: "#"
   }
 };
 
@@ -22,7 +22,7 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "#",
   },
   {
     name: "LinkedIn",
@@ -37,19 +37,19 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:tesfamichael.zelelke@gmail.com",
+    link: "#",
   },
 ];
 
 const home = {
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  title: "Home",
+  description: `Portfolio website showcasing my expertise in DevOps Engineering and Cloud Infrastructure`,
+  headline: <>DevOps Engineer & Cloud Infrastructure Specialist</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm a DevOps Engineer specializing in cloud infrastructure, CI/CD automation, and Kubernetes.
+      <br /> Experienced in building scalable, secure, and efficient cloud-native solutions.
     </>
   ),
 };

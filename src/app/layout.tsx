@@ -3,7 +3,7 @@ import "@/once-ui/tokens/index.scss";
 
 import classNames from "classnames";
 
-import { Footer, Header, RouteGuard } from "@/components";
+import { Header, RouteGuard } from "@/components";
 import { baseURL, effects, style } from "@/app/resources";
 
 import { Inter } from "next/font/google";
@@ -17,6 +17,24 @@ export async function generateMetadata() {
     metadataBase: new URL(`https://${baseURL}`),
     title: home.title,
     description: home.description,
+    icons: {
+      icon: [
+        { url: '/images/favicon/devops-logo.png', type: 'image/png' },
+        { url: '/images/favicon/favicon.ico', sizes: 'any' }
+      ],
+      shortcut: '/images/favicon/devops-logo.png',
+      apple: [
+        { url: '/images/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
+      ],
+      other: [
+        {
+          rel: 'mask-icon',
+          url: '/images/favicon/safari-pinned-tab.svg',
+          color: '#5bbad5'
+        }
+      ]
+    },
+    manifest: '/site.webmanifest',
     openGraph: {
       title: `${person.firstName}'s Portfolio`,
       description: "Portfolio website showcasing my work.",
@@ -154,7 +172,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
               <RouteGuard>{children}</RouteGuard>
             </Flex>
           </Flex>
-          <Footer />
+          {/* <Footer /> */}
         </Column>
       </ToastProvider>
     </Flex>

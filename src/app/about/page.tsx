@@ -136,14 +136,14 @@ export default function About() {
                 <Icon name="location" onBackground="neutral-weak" />
                 <Text>{person.location}</Text>
               </Flex>
-              <Flex gap="8" vertical="center">
+              {/* <Flex gap="8" vertical="center">
                 <Icon name="phone" onBackground="neutral-weak" />
                 <Text>{person.contact.phone}</Text>
               </Flex>
               <Flex gap="8" vertical="center">
                 <Icon name="email" onBackground="neutral-weak" />
                 <Text>{person.contact.email}</Text>
-              </Flex>
+              </Flex> */}
             </Flex>
             {social.length > 0 && (
             <Flex className={styles.blockAlign} gap="16" wrap horizontal="center">
