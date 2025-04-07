@@ -1,5 +1,7 @@
 import { InlineCode } from "@/once-ui/components";
 const avatar = `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/avatar.png`;
+const pp = `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/me.jpg`;
+
 const person = {
   firstName: "TESFAMICHAEL",
   lastName: "ABOSET",
@@ -12,8 +14,8 @@ const person = {
   languages: ["English", "Amharic"], // optional: Leave the array empty if you don't want to display languages
   contact: {
     email: "#",
-    phone: "#"
-  }
+    phone: "#",
+  },
 };
 
 const social = [
@@ -48,10 +50,13 @@ const home = {
   headline: <>DevOps Engineer & Cloud Infrastructure Specialist</>,
   subline: (
     <>
-      I'm a DevOps Engineer specializing in cloud infrastructure, CI/CD automation, and Kubernetes.
-      <br /> Experienced in building scalable, secure, and efficient cloud-native solutions.
+      I'm a DevOps Engineer specializing in cloud infrastructure, CI/CD
+      automation, and Kubernetes.
+      <br /> Experienced in building scalable, secure, and efficient
+      cloud-native solutions.
     </>
   ),
+  pp,
 };
 
 const about = {
@@ -72,7 +77,8 @@ const about = {
   intro: {
     display: true,
     title: "Summary",
-    description: "DevOps Engineer with experience in CI/CD automation, Kubernetes architecture, and infrastructure management across cloud and on-premises environments. Skilled in microservices deployment, Vault security, GitOps, and monitoring and performance across financial and other sectors."
+    description:
+      "DevOps Engineer with experience in CI/CD automation, Kubernetes architecture, and infrastructure management across cloud and on-premises environments. Skilled in microservices deployment, Vault security, GitOps, and monitoring and performance across financial and other sectors.",
   },
   skills: {
     display: true,
@@ -83,34 +89,40 @@ const about = {
         items: [
           "Infrastructure as Code (IaC)",
           "Continuous Integration/Continuous Deployment (CI/CD)",
-          "Monitoring & Logging"
-        ]
+          "Monitoring & Logging",
+        ],
       },
       {
         title: "Programming Languages",
-        items: ["Golang", "Python", "Bash", "YAML"]
+        items: ["Golang", "Python", "Bash", "YAML"],
       },
       {
         title: "Containerization & Orchestration",
-        items: ["Docker", "Kubernetes"]
+        items: ["Docker", "Kubernetes"],
       },
       {
         title: "Cloud Services",
         items: [
           "Azure (AKS, Blob Storage, VM)",
           "AWS (EKS, S3, ECS, EC2)",
-          "GCP (GKE, App Engine, Cloud Run)"
-        ]
+          "GCP (GKE, App Engine, Cloud Run)",
+        ],
       },
       {
         title: "CI/CD Tools",
-        items: ["Azure Devops", "Gitlab CI/CD", "ArgoCD", "Jenkins", "Github Actions"]
+        items: [
+          "Azure Devops",
+          "Gitlab CI/CD",
+          "ArgoCD",
+          "Jenkins",
+          "Github Actions",
+        ],
       },
       {
         title: "IaC & Monitoring",
-        items: ["Terraform", "Prometheus", "Grafana", "Kiali"]
-      }
-    ]
+        items: ["Terraform", "Prometheus", "Grafana", "Kiali"],
+      },
+    ],
   },
   experience: {
     display: true,
@@ -125,8 +137,8 @@ const about = {
           "Overseeing 12+ microservices in multiple languages, deployed across 5 banks' on-premise servers, ensuring high availability and performance.",
           "Implemented automated HashiCorp Vault management using Ansible, securing sensitive credentials and reducing manual secret handling risks.",
           "Managing self-hosted GitLab CI/CD, container registry, optimizing image storage, and enforcing security best practices.",
-          "Leading the design and implementation of Kubernetes architecture, planning migration from on-premise deployments to a scalable containerized environment."
-        ]
+          "Leading the design and implementation of Kubernetes architecture, planning migration from on-premise deployments to a scalable containerized environment.",
+        ],
       },
       {
         company: "Ablaze IT Labs and Engineering PLC",
@@ -137,8 +149,8 @@ const about = {
           "Kubernetes & Database Management: Managed 4-node AKS clusters, improving app reliability and optimizing PostgreSQL database performance by 35%.",
           "Infrastructure Provisioning: Deployed and managed Azure VMs and Azure Blob Storage, ensuring scalability and cost efficiency.",
           "Microservices Deployment: Developed and secured 10+ microservices on Azure AKS, reducing latency by 40% and improving system resilience.",
-          "Team Collaboration & GitOps: Led GitOps adoption, streamlining infrastructure management and boosting deployment efficiency by 50%"
-        ]
+          "Team Collaboration & GitOps: Led GitOps adoption, streamlining infrastructure management and boosting deployment efficiency by 50%",
+        ],
       },
       {
         company: "AddisPay Financial Technologies PLC",
@@ -149,8 +161,8 @@ const about = {
           "Enhanced application connectivity and security through self-hosted services like Docker, kubernetes and Istio.",
           "Automated deployments and ensured environment consistency with ArgoCD and GitLab CI/CD.",
           "Simplified service communication and enabled advanced traffic management with Istio deployment.",
-          "Implemented comprehensive monitoring and observability with Prometheus, Grafana, and Kiali."
-        ]
+          "Implemented comprehensive monitoring and observability with Prometheus, Grafana, and Kiali.",
+        ],
       },
       {
         company: "Hirundo AB Telecommunication VAS",
@@ -161,10 +173,10 @@ const about = {
           "Installed, upgraded, and troubleshoot hardware components to minimize system failures.",
           "Set up and manage enterprise-grade software and network infrastructure to enhance connectivity and system efficiency.",
           "Diagnosed and resolved software and network issues, ensuring smooth operations.",
-          "Provided technical support, addressing queries from staff and clients to ensure issue resolution."
-        ]
-      }
-    ]
+          "Provided technical support, addressing queries from staff and clients to ensure issue resolution.",
+        ],
+      },
+    ],
   },
   education: {
     display: true,
@@ -173,10 +185,10 @@ const about = {
       {
         name: "Bachelor of Science in Electrical and Computer Engineering",
         year: "2021",
-        description: "Major: Computer Engineering"
-      }
-    ]
-  }
+        description: "Major: Computer Engineering",
+      },
+    ],
+  },
 };
 
 export { person, social, home, about };
