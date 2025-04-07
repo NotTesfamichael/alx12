@@ -1,5 +1,6 @@
 import { InlineCode } from "@/once-ui/components";
 const avatar = `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/avatar.png`;
+const pp = `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/me.jpg`;
 const person = {
   firstName: "TESFAMICHAEL",
   lastName: "ABOSET",
@@ -52,6 +53,7 @@ const home = {
       <br /> Experienced in building scalable, secure, and efficient cloud-native solutions.
     </>
   ),
+  pp,
 };
 
 const about = {
