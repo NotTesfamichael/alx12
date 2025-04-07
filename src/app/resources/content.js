@@ -1,5 +1,5 @@
 import { InlineCode } from "@/once-ui/components";
-
+const avatar = `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/avatar.png`;
 const person = {
   firstName: "TESFAMICHAEL",
   lastName: "ABOSET",
@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "DEVOPS ENGINEER",
-  avatar: `${basePath}/images/avatar.png`,
+  avatar,
   location: "Addis Ababa, Ethiopia",
   languages: ["English", "Amharic"], // optional: Leave the array empty if you don't want to display languages
   contact: {
