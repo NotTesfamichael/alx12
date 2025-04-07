@@ -12,7 +12,7 @@ const nextConfig = {
   images: {
     unoptimized: true, // REQUIRED for static
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/magic-portfolio' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/before' : '',
 };
 
 export default withMDX(nextConfig);
