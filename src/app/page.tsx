@@ -60,10 +60,17 @@ export default function Home() {
       />
       <Column fillWidth paddingY="l" gap="m">
         <Column maxWidth="s">
-          <RevealFx translateY="4" fillWidth horizontal="start" paddingBottom="m">
+          <RevealFx translateY="4" fillWidth horizontal="start" paddingBottom="m" style={{display:"flex",justifyContent:"space-between", gap:"100px"}}>
             <Heading wrap="balance" variant="display-strong-l">
               {home.headline}
             </Heading>
+            <Image
+              style={{ borderRadius: "10%" }}
+              src={home.pp}
+              alt=""
+              width={340}
+              height={340}
+            />
           </RevealFx>
           <RevealFx translateY="8" delay={0.2} fillWidth horizontal="start" paddingBottom="m">
             <Text wrap="balance" onBackground="neutral-weak" variant="heading-default-xl">
