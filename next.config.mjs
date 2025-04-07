@@ -13,6 +13,9 @@ const nextConfig = {
     unoptimized: true, // REQUIRED for static
   },
   basePath: process.env.NODE_ENV === 'production' ? '/before' : '',
+  publicRuntimeConfig: {
+    basePath: process.env.NODE_ENV === 'production' ? '/before' : '',
+  }
 };
 
 export default withMDX(nextConfig);

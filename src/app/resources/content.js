@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "DEVOPS ENGINEER",
-  avatar: "/images/avatar.png",
+  avatar: `${basePath}/images/avatar.png`,
   location: "Addis Ababa, Ethiopia",
   languages: ["English", "Amharic"], // optional: Leave the array empty if you don't want to display languages
   contact: {
