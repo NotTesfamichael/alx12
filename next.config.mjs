@@ -12,7 +12,7 @@ const nextConfig = {
   images: {
     unoptimized: true, // REQUIRED for static
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/before' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/alx12' : '',
 };
 
 export default withMDX(nextConfig);
