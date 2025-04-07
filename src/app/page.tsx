@@ -59,8 +59,8 @@ export default function Home() {
           }),
         }}
       />
-      <Column fillWidth paddingY="l" gap="m">
-        <Column maxWidth="s">
+      <Column fillWidth paddingY="l" gap="xl">
+        <Column maxWidth="m">
           <RevealFx translateY="4" fillWidth horizontal="start" paddingBottom="m" style={{display:"flex",justifyContent:"space-between", gap:"100px"}}>
             <Heading wrap="balance" variant="display-strong-l">
               {home.headline}
