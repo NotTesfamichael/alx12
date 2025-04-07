@@ -8,10 +8,9 @@ const withMDX = mdx({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ["ts", "tsx", "md", "mdx"],
-  distDir: 'build/dist',
-  output: 'export',
+  output: 'export', // REQUIRED for static export
   images: {
-    unoptimized: true
+    unoptimized: true, // REQUIRED for static
   },
   basePath: process.env.NODE_ENV === 'production' ? '/magic-portfolio' : '',
 };
